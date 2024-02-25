@@ -50,6 +50,9 @@ button {
     color: white;
     border-color: white;
 }
+button:hover {
+cursor: pointer;
+}
 
 .buttoncenter {
     margin: 0;
