@@ -50,9 +50,6 @@ button {
     color: white;
     border-color: white;
 }
-button:hover {
-cursor: pointer;
-}
 
 .buttoncenter {
     margin: 0;
@@ -73,6 +70,9 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+}
+button:hover {
+	cursor: pointer;
 }
 
 a:active {
