@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "background3.gif",
         "background4.gif",
         "background5.gif"
+        "background6.gif"
         // Add more image URLs as needed
     ];
 
