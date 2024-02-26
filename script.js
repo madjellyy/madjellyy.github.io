@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
     backgroundElement.style.backgroundImage = `url('${selectedImage}')`;
 });
 
-document.body.addEventListener('click', function() {
-  var audio = document.getElementById('vice city.mp3');
-  audio.play();
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.addEventListener('click', function() {
+    var audio = document.getElementById('myAudio');
+    if (audio) {
+      audio.play();
+    }
+  });
 });
