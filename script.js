@@ -17,3 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const backgroundElement = document.querySelector('.background-image');
     backgroundElement.style.backgroundImage = `url('${selectedImage}')`;
 });
+
+document.body.addEventListener('click', function() {
+  var audio = document.getElementById('vice city.mp3');
+  audio.play();
+});
