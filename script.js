@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const randomIndex = Math.floor(Math.random() * images.length);
     const selectedImage = images[randomIndex];
-    const therealimages = "yo mr white"
     const backgroundElement = document.querySelector('.background-image');
     backgroundElement.style.backgroundImage = `url('${selectedImage}')`;
 });
