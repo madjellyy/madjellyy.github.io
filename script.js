@@ -1,6 +1,3 @@
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
         "background.gif",
@@ -24,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.addEventListener('click', function() {
     var audio = document.getElementById('myAudio');
     if (audio) {
-      audio.volume = getRandomInt(5);
+      audio.volume = 2;
       audio.play();
     
   });
