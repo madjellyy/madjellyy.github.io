@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (audio) {
       audio.volume = 1;
       audio.play();
-    
+    }
   });
 });
