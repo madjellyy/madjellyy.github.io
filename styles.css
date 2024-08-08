@@ -1,6 +1,10 @@
+html {
+    background-image: url("ow6unus1l7c71.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-
-.avatar {
+.you {
     height: 120px;
     width: 120px;
     padding-left: 20px;
@@ -10,38 +14,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-
-  .madjelly {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    padding-bottom: 5px;
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-}
-
-
-
-.smallertextlmao {
-font-family: "Poppins", sans-serif;
-font-weight: 600;
-font-style: normal;
-text-align: center;
-color: white;
-font-size: 15px;
-text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-} 
 
 button {
     font-family: "Poppins", sans-serif;
@@ -91,17 +63,4 @@ a:hover {
 a:active {
     text-decoration: none;
     color: white
-}
-
-
-
-.background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: -5
 }
