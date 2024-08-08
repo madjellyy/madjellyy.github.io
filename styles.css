@@ -1,0 +1,66 @@
+html {
+    background-image: url("ow6unus1l7c71.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.you {
+    height: 120px;
+    width: 120px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: none;
+    color: white;
+    transition: 0.3s;
+    margin-left: 3px;
+    margin-bottom: 400px;
+    background-color: none;
+    border: none;
+}
+
+button:hover {
+
+    cursor: pointer;
+}
+
+.buttoncenter {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 420px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white
+}
+
+a:visited {
+    text-decoration: none;
+    color: white
+}
+
+a:hover {
+    text-decoration: none;
+    color: white
+}
+
+a:active {
+    text-decoration: none;
+    color: white
+}
