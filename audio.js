@@ -1,9 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.addEventListener('click', function() {
-      var audio = document.getElementById('myAudio');
-      if (audio) {
-        audio.volume = 1;
-        audio.play();
-      }
-    });
-  });
+document.getElementById('playImage').addEventListener('click', function() {
+    var audio = document.getElementById('audio');
+    audio.currentTime = 0; // Reset the audio to the start
+    audio.play();          // Play the audio
+});
