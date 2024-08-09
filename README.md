@@ -1,2 +1,2 @@
-# madjellyy.github.io
-My personal website ^-^
+# MAD JELLY STINKS!
+Help we cant publish the website
