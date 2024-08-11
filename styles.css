@@ -1,5 +1,5 @@
 html {
-    background-image: url('minecraft.jpg');
+    background-image: url("ow6unus1l7c71.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -13,11 +13,6 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-            -webkit-user-select: none; /* Safari */
-            -moz-user-select: none;    /* Firefox */
-            -ms-user-select: none;     /* Internet Explorer/Edge */
-            user-select: none;         /* Non-prefixed version, currently supported by Chrome and Opera */
-            outline: none;    
 }
 
 button {
@@ -34,11 +29,6 @@ button {
     margin-bottom: 400px;
     background-color: none;
     border: none;
-                -webkit-user-select: none; /* Safari */
-            -moz-user-select: none;    /* Firefox */
-            -ms-user-select: none;     /* Internet Explorer/Edge */
-            user-select: none;         /* Non-prefixed version, currently supported by Chrome and Opera */
-            outline: none;    
 }
 
 button:hover {
@@ -73,4 +63,13 @@ a:hover {
 a:active {
     text-decoration: none;
     color: white
+}
+
+.description {
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
 }
