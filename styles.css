@@ -86,14 +86,3 @@ a:active {
     color: white;
     font-size: 24px;
 }
-
-.mccicon {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding-top: 240px;
-    height: 128px;
-    width: 128px;
-}
