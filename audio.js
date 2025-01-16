@@ -1,13 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
-        "background.gif",
-        "background2.gif",
-        "background1.gif",
-        "bricks.gif",
-        "background3.gif",
-        "background4.gif",
-        "background5.gif",
-        "trollgif.gif"
+        "background.png"
         // Add more image URLs as needed
     ];
 
