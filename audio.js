@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Add more image URLs as needed
     ];
 
-    const randomIndex = Math.floor(Math.random() * images.length);
+    const randomIndex = 1; // teehee
     const selectedImage = images[randomIndex];   
     const backgroundElement = document.querySelector('.background-image');
     backgroundElement.style.backgroundImage = `url('${selectedImage}')`;
