@@ -13,16 +13,27 @@
             background-image: url('soggy.png');
             background-size: cover; /* Ensures the image covers the whole screen */
             background-repeat: no-repeat; /* Prevents tiling */
-            background-position: center center; /* Centers the image */
+            background-position: center center; /* Centers the background */
+            text-align: center; /* Centers text content horizontally */
+            margin: 0;
+            padding: 0;
         }
 
-        /* Optional: Customize the styles for specific elements */
+        /* Customize heading and paragraph styles */
         h1 {
-            font-weight: 700; /* Bold font for the heading */
+            font-weight: 700;
         }
 
         p {
-            font-weight: 350; /* Regular font weight for the paragraph */
+            font-weight: 350;
+        }
+
+        /* Center the image element */
+        img {
+            display: block;
+            margin: 20px auto; /* Automatically center the image horizontally */
+            max-width: 80%; /* Ensure the image is responsive */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -31,5 +42,8 @@
     <p>- Clicking cat makes it meow</p>
     <p>- DO NOT THE CAT!</p>
     <p>- pls be gentle with the cat</p>
+
+    <!-- Add an image of the cat -->
+    <img src="cat.png" alt="A cute cat">
 </body>
 </html>
