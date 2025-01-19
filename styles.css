@@ -1,0 +1,102 @@
+html {
+    background: linear-gradient(-45deg, #0b0b0b, #1e1528, #302240);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    height: 100vh;
+}
+
+.avatar {
+    height: 120px;
+    width: 120px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+  .madjelly {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 50px
+}
+
+.smallertextlmao {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+text-align: center;
+color: white;
+font-size: 15px
+} 
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: block;
+    margin-top: 9px;
+    width: 560px;
+    height: 75px;
+    border-radius: 50px;
+    font-size: 20px;
+    background: linear-gradient(22.5deg, #17131C, #2B1A3E);
+    color: white;
+    border-color: white;
+}
+
+.buttoncenter {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.radio {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.radiotext {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 15px
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
