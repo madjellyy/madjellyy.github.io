@@ -1,4 +1,4 @@
-console.log("tt");
+console.log("ttt");
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
