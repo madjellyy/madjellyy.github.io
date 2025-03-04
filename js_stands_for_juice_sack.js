@@ -1,4 +1,4 @@
-console.log("z");
+console.log("zf");
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
