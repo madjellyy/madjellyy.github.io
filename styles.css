@@ -1,24 +1,26 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    filter: blur(15px); 
 }
 
 #image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 #current-image {
-    max-width: 100%;
-    max-height: 80vh;
-    cursor: pointer;
+    width: 300px;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
