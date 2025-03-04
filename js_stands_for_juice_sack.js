@@ -1,4 +1,8 @@
 console.log("sigma");
+//fyi if ur reading this, consider doing all three
+// find god
+// get a job
+// or GET OUT!
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
@@ -26,11 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('New Image Path:', images[currentIndex]);
     };
 
-    // Use both pointerdown (desktop) and touchstart (mobile)
     imageElement.addEventListener('pointerdown', changeImage);
-    imageElement.addEventListener('touchstart', (event) => {
-        event.preventDefault(); // Prevents double firing on some devices
-        changeImage();
-    });
+    imageElement.addEventListener('touchstart', (event) => {changeImage();});
 });
 
