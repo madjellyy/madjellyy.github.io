@@ -9,7 +9,7 @@ let currentIndex = 0;
 
 const imageElement = document.getElementById('current-image');
 
-imageElement.addEventListener('click', () => {
+imageElement.addEventListener('mousedown', () => {
     // Debugging: Check the current index and image
     console.log('Current Index:', currentIndex);
     console.log('Image Path:', images[currentIndex]);
