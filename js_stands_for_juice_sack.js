@@ -4,8 +4,9 @@ const images = [
     "i_cat_mogus.jpg",
     "i_cup_cat.png",
     "i_daisy_cat.webp",
-    "i_sog",
-    "i_alien_cat"
+    "i_sog.jpg",
+    "i_alien_cat.jpg",
+    "empty"
 ];
 
 let currentIndex = 0;
