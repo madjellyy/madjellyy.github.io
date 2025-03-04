@@ -2,7 +2,7 @@ console.log("sigma");
 //fyi if ur reading this, consider doing all three
 // find god
 // get a job
-// or GET OUT!
+// and GET OUT!
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
