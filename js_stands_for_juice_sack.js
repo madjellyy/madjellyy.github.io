@@ -17,6 +17,15 @@ console.log(imageElement);
 imageElement.addEventListener('click', function() {
   console.log('Button clicked!');
 });
+let visitCount = localStorage.getItem('visitCount');
+if (!visitCount) {
+    visitCount = 1;
+} else {
+    visitCount = parseInt(visitCount) + 1;
+}
+localStorage.setItem('visitCount', visitCount);
+console.log(`Visitor Count: ${visitCount}`);
+
 
 imageElement.addEventListener('click', () => {
     console.log('Current Index:', currentIndex);
