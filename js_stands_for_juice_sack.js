@@ -31,6 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     imageElement.addEventListener('pointerdown', changeImage);
-    imageElement.addEventListener('touchstart', (event) => {changeImage();});
+    imageElement.addEventListener('touchstart',changeImage);
 });
 
