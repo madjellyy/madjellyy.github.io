@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
     const imageElement = document.getElementById('current-image');
+    const blurredBackground = document.getElementById('blurred-background');
 
-    if (!imageElement) {
-        console.error('Image element not found!');
+    if (!imageElement || !blurredBackground) {
+        console.error('Image elements not found!');
         return;
     }
 
@@ -22,13 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const newImage = images[currentIndex];
 
         imageElement.src = newImage;
-
-        document.body.style.backgroundImage = `url(${newImage})`;
+        blurredBackground.style.backgroundImage = `url(${newImage})`;
 
         console.log('New Image Path:', newImage);
     };
 
     imageElement.addEventListener('pointerdown', changeImage);
-
-    document.body.style.backgroundImage = `url(${images[0]})`;
+    blurredBackground.style.backgroundImage = `url(${images[0]})`;
 });
