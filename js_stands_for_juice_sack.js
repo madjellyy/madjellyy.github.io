@@ -1,8 +1,8 @@
 const images = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg',
-    'image4.jpg'
+    "i_cat_mogus.jpg",
+    "i_best_cat.webp",
+    "i_cup_cat.png",
+    "i_daisy_cat.webp"
 ];
 
 let currentIndex = 0;
