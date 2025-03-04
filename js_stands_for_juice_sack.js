@@ -8,6 +8,11 @@ const images = [
 let currentIndex = 0;
 
 const imageElement = document.getElementById('current-image');
+console.log(imageElement);
+imageElement.addEventListener('click', function() {
+  // Code to be executed when the button is clicked
+  console.log('Button clicked!');
+});
 
 imageElement.addEventListener('click', () => {
     // Debugging: Check the current index and image
