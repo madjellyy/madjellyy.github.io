@@ -3,7 +3,9 @@ const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
     "i_cup_cat.png",
-    "i_daisy_cat.webp"
+    "i_daisy_cat.webp",
+    "i_sog",
+    "i_alien_cat"
 ];
 
 let currentIndex = 0;
