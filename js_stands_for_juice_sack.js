@@ -1,4 +1,4 @@
-console.log("i");
+console.log("s");
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
