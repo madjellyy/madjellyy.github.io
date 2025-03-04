@@ -6,6 +6,7 @@ const images = [
     "i_daisy_cat.webp",
     "i_sog.jpg",
     "i_alein_cat.jpg",
+    "i_bath_cat.jpg",
     "empty"
 ];
 
