@@ -8,27 +8,29 @@ const images = [
 
 let currentIndex = 0;
 
-const imageElement = document.getElementById('current-image');
-console.log("Ran");
-console.log(imageElement);
-imageElement.addEventListener('click', function() {
-  // Code to be executed when the button is clicked
-  console.log('Button clicked!');
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const imageElement = document.getElementById('current-image');
 
-imageElement.addEventListener('click', () => {
-    // Debugging: Check the current index and image
-    console.log('Current Index:', currentIndex);
-    console.log('Image Path:', images[currentIndex]);
-    
-    currentIndex++;
-    if (currentIndex >= images.length) {
-        currentIndex = 0;  // Loop back to the first image
+    if (!imageElement) {
+        console.error('Image element not found!');
+        return;
     }
 
-    // Update the src of the image
-    imageElement.src = images[currentIndex];
+    const changeImage = () => {
+        console.log('Event Triggered!');
+        console.log('Current Index:', currentIndex);
 
-    // Debugging: Log the new image path
-    console.log('New Image Path:', images[currentIndex]);
+        currentIndex = (currentIndex + 1) % images.length;
+        imageElement.src = images[currentIndex];
+
+        console.log('New Image Path:', images[currentIndex]);
+    };
+
+    // Use both pointerdown (desktop) and touchstart (mobile)
+    imageElement.addEventListener('pointerdown', changeImage);
+    imageElement.addEventListener('touchstart', (event) => {
+        event.preventDefault(); // Prevents double firing on some devices
+        changeImage();
+    });
 });
+
