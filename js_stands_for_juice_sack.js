@@ -1,33 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const images = [
-        "i_best_cat.webp",
-        "i_cat_mogus.jpg",
-        "i_cup_cat.png",
-        "i_daisy_cat.webp"
-    ];
+const images = [
+    "i_best_cat.webp",
+    "i_cat_mogus.jpg",
+    "i_cup_cat.png",
+    "i_daisy_cat.webp"
+];
 
-    let currentIndex = 0;
-    const imageElement = document.getElementById('current-image');
-    const blurredBackground = document.getElementById('blurred-background');
+let currentIndex = 0;
 
-    if (!imageElement || !blurredBackground) {
-        console.error('Image elements not found!');
-        return;
+const imageElement = document.getElementById('current-image');
+console.log("Ran");
+console.log(imageElement);
+imageElement.addEventListener('click', function() {
+  console.log('Button clicked!');
+});
+
+imageElement.addEventListener('click', () => {
+    console.log('Current Index:', currentIndex);
+    console.log('Image Path:', images[currentIndex]);
+    
+    currentIndex++;
+    if (currentIndex >= images.length) {
+        currentIndex = 0;  
     }
 
-    const changeImage = () => {
-        console.log('Event Triggered!');
-        console.log('Current Index:', currentIndex);
+    imageElement.src = images[currentIndex];
 
-        currentIndex = (currentIndex + 1) % images.length;
-        const newImage = images[currentIndex];
-
-        imageElement.src = newImage;
-        blurredBackground.style.backgroundImage = `url(${newImage})`;
-
-        console.log('New Image Path:', newImage);
-    };
-
-    imageElement.addEventListener('pointerdown', changeImage);
-    blurredBackground.style.backgroundImage = `url(${images[0]})`;
+    console.log('New Image Path:', images[currentIndex]);
 });
