@@ -17,16 +17,8 @@ const imageElement = document.getElementById('current-image');
 console.log("Ran");
 console.log(imageElement);
 imageElement.addEventListener('click', function() {
-  console.log('Button clicked!');
+  console.log('c');
 });
-let visitCount = localStorage.getItem('visitCount');
-if (!visitCount) {
-    visitCount = 1;
-} else {
-    visitCount = parseInt(visitCount) + 1;
-}
-localStorage.setItem('visitCount', visitCount);
-console.log(`Visitor Count: ${visitCount}`);
 
 
 imageElement.addEventListener('click', () => {
