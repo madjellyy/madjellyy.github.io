@@ -8,8 +8,8 @@ const images = [
     "i_alein_cat.jpg",
     "i_bath_cat.png",
     "i_zau.png",
-    "i_blur.png",
-    "i_dumb_cat.webp",
+    "i_cactus.png",
+    "i_dumb_cat.png",
     "i_not_real_cat.jpg",
     "empty"
 ];
