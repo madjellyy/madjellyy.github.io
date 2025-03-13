@@ -3,6 +3,7 @@ const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
     "i_cup_cat.png",
+    "i_bingus.jpeg",
     "i_daisy_cat.webp",
     "i_sog.jpg",
     "i_alein_cat.jpg",
