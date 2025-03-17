@@ -13,7 +13,7 @@ const images = [
     "i_dumb_cat.png",
     "i_silly_car.jpeg",
     "i_not_real_cat.jpg",
-    "i_ping_cat.webp",
+    "i_pink_cat.webp",
     "empty"
 ];
 
