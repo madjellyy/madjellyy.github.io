@@ -11,6 +11,7 @@ const images = [
     "i_zau.png",
     "i_cactus.png",
     "i_dumb_cat.png",
+    "i_silly_car.jpeg",
     "i_not_real_cat.jpg",
     "empty"
 ];
