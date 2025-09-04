@@ -21,7 +21,7 @@ const images = [
     "i_luna.webp",
     "i_space_cat.png",
     "i_bug_cat.jpg",
-    "i_cheesecake_cat.png",
+    "i_cheesecake_cat.jpg",
     "i_bear_cat.jpeg",
 ];
 
@@ -59,5 +59,6 @@ document.getElementById("next").addEventListener("click", () => {
 imageElement.addEventListener("click", () => {
     showImage(currentIndex + 1);
 });
+
 
 
