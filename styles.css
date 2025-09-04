@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background: #f9f9f9; /* optional: light background */
+  background: ##111111; /* optional: light background */
 }
 
 /* container only handles layout */
@@ -25,10 +25,8 @@ body {
   max-height: 70vh;
   object-fit: contain;
   display: block;
-  border-radius: 12px; /* rounded corners */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* optional: subtle shadow */
+  box-shadow: 0 6px 12px rgba(17,17,17,0.2); /* optional: subtle shadow */
 }
-
 /* arrows directly below image */
 #controls {
   margin-top: 15px;
@@ -47,7 +45,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 6px rgba(17,17,17,0.15);
   transition: all 0.2s ease;
 }
 
@@ -71,3 +69,4 @@ body {
     gap: 25px; /* smaller spacing */
   }
 }
+
