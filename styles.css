@@ -4,7 +4,6 @@
   width: 80%;
   max-width: 600px;
   margin: auto;
-  border-radius: 12px;
   background: #000; /* optional: adds contrast */
   overflow: hidden;
 }
@@ -13,11 +12,10 @@
 #image-container img {
   width: 100%;
   height: auto;
-  max-height: 70vh;     /* prevents it from covering full screen */
-  object-fit: contain;  /* keeps proportions */
+  max-height: 70vh;   /* prevents giant full screen stretch */
+  object-fit: contain;
   display: block;
 }
-
 
 /* arrows sit on top of image at bottom */
 #controls {
@@ -51,6 +49,3 @@
 .nav-btn:active {
   transform: scale(0.95);
 }
-
-
-
