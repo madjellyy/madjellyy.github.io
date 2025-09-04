@@ -1,4 +1,4 @@
-console.log("v5");
+console.log("v6");
 
 const images = [
     "i_best_cat.webp",
@@ -22,7 +22,17 @@ const images = [
     "i_space_cat.png"
 ];
 
-let currentIndex = Math.floor(Math.random() * images.length); // start random
+// Fisher-Yates shuffle
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+shuffleArray(images); // shuffle once at page load
+
+let currentIndex = 0; // start at first image after shuffle
 const imageElement = document.getElementById('current-image');
 imageElement.src = images[currentIndex];
 
@@ -46,8 +56,3 @@ document.getElementById("next").addEventListener("click", () => {
 imageElement.addEventListener("click", () => {
     showImage(currentIndex + 1);
 });
-
-
-
-
-
