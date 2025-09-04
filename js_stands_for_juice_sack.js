@@ -1,4 +1,4 @@
-console.log("hiiii");
+console.log("v1);
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
@@ -44,4 +44,5 @@ imageElement.addEventListener('click', () => {
 
     console.log('New Image Path:', images[currentIndex]);
 });
+
 
