@@ -1,4 +1,4 @@
-console.log("v2");
+console.log("v3");
 
 const images = [
     "i_best_cat.webp",
@@ -43,3 +43,4 @@ document.getElementById("next").addEventListener("click", () => {
 imageElement.addEventListener("click", () => {
     showImage(currentIndex + 1);
 });
+
