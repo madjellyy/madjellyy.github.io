@@ -4,6 +4,7 @@
   width: 80%;
   max-width: 600px;
   margin: auto;
+  border-radius: 12px;
   background: #000; /* optional: adds contrast */
   overflow: hidden;
 }
@@ -50,5 +51,6 @@
 .nav-btn:active {
   transform: scale(0.95);
 }
+
 
 
