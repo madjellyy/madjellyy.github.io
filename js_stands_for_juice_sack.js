@@ -1,4 +1,5 @@
-console.log("v1);
+console.log("v2");
+
 const images = [
     "i_best_cat.webp",
     "i_cat_mogus.jpg",
@@ -18,31 +19,27 @@ const images = [
     "empty"
 ];
 
-let currentIndex = 0;
-
-const randomImage = images[Math.floor(Math.random() * images.length)];
-document.getElementById("current-image").src = randomImage;
-
+let currentIndex = Math.floor(Math.random() * images.length); // start random
 const imageElement = document.getElementById('current-image');
-console.log("Ran");
-console.log(imageElement);
-imageElement.addEventListener('click', function() {
-  console.log('c');
-});
+imageElement.src = images[currentIndex];
 
-
-imageElement.addEventListener('click', () => {
-    console.log('Current Index:', currentIndex);
-    console.log('Image Path:', images[currentIndex]);
-    
-    currentIndex++;
-    if (currentIndex >= images.length) {
-        currentIndex = 0;  
-    }
-
+// update function
+function showImage(index) {
+    currentIndex = (index + images.length) % images.length; // wrap around
     imageElement.src = images[currentIndex];
+    console.log("Showing:", images[currentIndex]);
+}
 
-    console.log('New Image Path:', images[currentIndex]);
+// button controls
+document.getElementById("prev").addEventListener("click", () => {
+    showImage(currentIndex - 1);
 });
 
+document.getElementById("next").addEventListener("click", () => {
+    showImage(currentIndex + 1);
+});
 
+// optional: keep click-to-cycle forward
+imageElement.addEventListener("click", () => {
+    showImage(currentIndex + 1);
+});
