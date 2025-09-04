@@ -16,7 +16,9 @@ const images = [
     "i_not_real_cat.jpg",
     "i_computer_cat.webp",
     "i_pink_cat.webp",
-    "empty"
+    "i_big_cat.jpg",
+    "i_chonk.jpg",
+    "i_luna.webp"
 ];
 
 let currentIndex = Math.floor(Math.random() * images.length); // start random
@@ -43,4 +45,5 @@ document.getElementById("next").addEventListener("click", () => {
 imageElement.addEventListener("click", () => {
     showImage(currentIndex + 1);
 });
+
 
