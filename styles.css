@@ -1,43 +1,53 @@
-/* container defines size */
-#image-container {
-  position: relative;
-  width: 80%;
-  max-width: 600px;
-  margin: auto;
-  background: #000; /* optional: adds contrast */
-  overflow: hidden;
+/* center everything on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: #f9f9f9; /* optional: light background */
 }
 
-/* image scales nicely inside */
+/* container only handles layout */
+#image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* image scaling + rounded corners */
 #image-container img {
   width: 100%;
   height: auto;
-  max-height: 70vh;   /* prevents giant full screen stretch */
+  max-height: 70vh;
   object-fit: contain;
   display: block;
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* optional: subtle shadow */
 }
 
-/* arrows sit on top of image at bottom */
+/* arrows directly below image */
 #controls {
-  position: absolute;
-  bottom: 10px;       /* sticks to bottom of container */
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 15px;
   display: flex;
+  justify-content: center;
   gap: 40px;
 }
 
-/* styled buttons */
+/* button styling */
 .nav-btn {
   background: #ffffffcc;
-  border: none;
+  border: 2px solid #ddd;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
   transition: all 0.2s ease;
 }
 
