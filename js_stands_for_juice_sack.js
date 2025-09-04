@@ -20,6 +20,9 @@ const images = [
 
 let currentIndex = 0;
 
+const randomImage = images[Math.floor(Math.random() * images.length)];
+document.getElementById("current-image").src = randomImage;
+
 const imageElement = document.getElementById('current-image');
 console.log("Ran");
 console.log(imageElement);
@@ -41,3 +44,4 @@ imageElement.addEventListener('click', () => {
 
     console.log('New Image Path:', images[currentIndex]);
 });
+
