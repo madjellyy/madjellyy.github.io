@@ -5,7 +5,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  font-size: 5rem;
+  font-size: 1.75rem;
   margin: 0;
   background: rgb(0,0,0);
   color: #f5f5f5; /* default text color stays readable */
@@ -55,7 +55,7 @@ body {
 
 .footer-text {
   margin-top: 40px; /* pushes it down */
-  font-size: 1.5rem; /* optional: adjust size */
+  font-size: 1rem; /* optional: adjust size */
   color: #f5f5f5;    /* matches dark theme */
 }
 
@@ -80,6 +80,7 @@ body {
     gap: 25px; /* smaller spacing */
   }
 }
+
 
 
 
