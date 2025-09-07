@@ -23,6 +23,9 @@ const images = [
     "i_bug_cat.jpg",
     "i_cheesecake_cat.jpg",
     "i_bear_cat.jpeg",
+    "i_angry.jpg",
+    "i_noc.jpg",
+    "i_rigby.jpg",
 ];
 
 // Fisher-Yates shuffle
@@ -59,6 +62,7 @@ document.getElementById("next").addEventListener("click", () => {
 imageElement.addEventListener("click", () => {
     showImage(currentIndex + 1);
 });
+
 
 
 
