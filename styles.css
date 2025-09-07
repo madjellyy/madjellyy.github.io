@@ -9,7 +9,6 @@ body {
   background: rgb(0,0,0);
   color: #f5f5f5; /* default text color stays readable */
 }
-
 /* container only handles layout */
 #image-container {
   display: flex;
@@ -78,6 +77,7 @@ body {
     gap: 25px; /* smaller spacing */
   }
 }
+
 
 
 
