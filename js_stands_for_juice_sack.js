@@ -40,6 +40,19 @@ function shuffleArray(array) {
 
 shuffleArray(images); // shuffle once at page load
 
+// toggle info menu
+const infoBtn = document.getElementById("info-btn");
+const infoMenu = document.getElementById("info-menu");
+
+infoBtn.addEventListener("click", () => {
+  if (infoMenu.style.display === "flex") {
+    infoMenu.style.display = "none";
+  } else {
+    infoMenu.style.display = "flex";
+  }
+});
+
+
 let currentIndex = 0; // start at first image after shuffle
 const imageElement = document.getElementById('current-image');
 imageElement.src = images[currentIndex];
@@ -64,6 +77,7 @@ document.getElementById("next").addEventListener("click", () => {
 imageElement.addEventListener("click", () => {
     showImage(currentIndex + 1);
 });
+
 
 
 
