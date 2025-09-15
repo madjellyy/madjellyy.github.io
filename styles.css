@@ -41,6 +41,11 @@ body {
 
 /* button styling (default desktop) */
 .nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical + horizontal centering */
+  line-height: 1; /* reset weird text spacing */
+
   background: #000000; /* darker buttons */
   color: #f5f5f5;
   border: 3px solid currentColor;
@@ -69,6 +74,11 @@ body {
 }
 
 #info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centers the "i" */
+  line-height: 1;
+
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -80,7 +90,6 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  line-height: 50px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.5);
   z-index: 1000;
   transition: all 0.2s ease;
@@ -143,6 +152,3 @@ body {
     padding: 6px 10px;
   }
 }
-
-
-
